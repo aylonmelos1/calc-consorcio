@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node dist/app.js",
+    "dev": "tsx --watch-path src --watch-path prisma --watch-path .env --watch-path public src/app.ts",
+    "build": "tsc -p tsconfig.json"
   },
   "keywords": [],
   "author": "",
